@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFZSCViewController">
+            <connections>
+                <outlet property="iamgeView1" destination="iQh-1Q-BR2" id="6Fu-7J-G3X"/>
+                <outlet property="imageView2" destination="StG-Pf-MQN" id="l9e-c5-CVG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正面上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avY-OR-R6S">
+                    <rect key="frame" x="47" y="174" width="120" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="gdu-C5-l3C"/>
+                        <constraint firstAttribute="width" constant="120" id="oug-QF-Q6a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="反面上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-BH-kBO">
+                    <rect key="frame" x="207" y="174" width="120" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Wc8-Rv-Knp"/>
+                        <constraint firstAttribute="height" constant="14" id="oyu-KM-LUg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-4B-LNA">
+                    <rect key="frame" x="47" y="79" width="120" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiahao.png" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-bq-1xg">
+                            <rect key="frame" x="47" y="28" width="25" height="25"/>
+                        </imageView>
+                        <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQh-1Q-BR2">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="80"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="DTV-tR-hKz"/>
+                        <constraint firstAttribute="width" constant="120" id="nbT-b0-bcE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-IC-gLC">
+                    <rect key="frame" x="207" y="79" width="120" height="80"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jiahao.png" translatesAutoresizingMaskIntoConstraints="NO" id="OW5-4j-EPz">
+                            <rect key="frame" x="47" y="28" width="25" height="25"/>
+                        </imageView>
+                        <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StG-Pf-MQN">
+                            <rect key="frame" x="0.0" y="0.0" width="120" height="80"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="NOd-EK-KfN"/>
+                        <constraint firstAttribute="height" constant="80" id="zUR-vm-WSB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WD8-IC-gLC" secondAttribute="trailing" constant="48" id="OBh-ci-ST3"/>
+                <constraint firstItem="8cc-4B-LNA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="TU3-H6-3Rh"/>
+                <constraint firstItem="8cc-4B-LNA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="XUv-NI-mqF"/>
+                <constraint firstItem="avY-OR-R6S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="47" id="cr4-tU-14N"/>
+                <constraint firstItem="avY-OR-R6S" firstAttribute="top" secondItem="8cc-4B-LNA" secondAttribute="bottom" constant="15" id="i87-5H-N9r"/>
+                <constraint firstItem="Ac4-BH-kBO" firstAttribute="top" secondItem="WD8-IC-gLC" secondAttribute="bottom" constant="15" id="ib5-XZ-BVg"/>
+                <constraint firstAttribute="trailing" secondItem="Ac4-BH-kBO" secondAttribute="trailing" constant="48" id="lbe-px-f5z"/>
+                <constraint firstItem="WD8-IC-gLC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="rSG-Cv-xKb"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="400.5" y="438.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jiahao.png" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WDAXSJViewController">
+            <connections>
+                <outlet property="lab" destination="SLa-fm-xPB" id="WPd-VO-UZV"/>
+                <outlet property="lab1" destination="1VO-Fa-LY4" id="7kX-Gg-rgF"/>
+                <outlet property="lab2" destination="5UG-J8-xVe" id="3et-n6-vmz"/>
+                <outlet property="lab3" destination="0Du-eA-Xvu" id="jgy-7K-JMi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="axsjbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eK5-Cb-hRY">
+                    <rect key="frame" x="151" y="90" width="72" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="H2f-pg-Uvk"/>
+                        <constraint firstAttribute="width" constant="72" id="Soh-ek-ZAH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您是第 2323 位加入我们的环保君" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLa-fm-xPB">
+                    <rect key="frame" x="30" y="220" width="315" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="qsl-hB-Oj5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共回收电池：10节" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VO-Fa-LY4">
+                    <rect key="frame" x="30" y="290" width="315" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="032-yf-hfK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计财富交易：30元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UG-J8-xVe">
+                    <rect key="frame" x="30" y="313" width="315" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="sMo-cY-fOB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共维护地球君绿地：0.23平方公顷" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Du-eA-Xvu">
+                    <rect key="frame" x="30" y="336" width="315" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="h1y-fd-nRJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5UG-J8-xVe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="0dI-II-Dze"/>
+                <constraint firstItem="eK5-Cb-hRY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="Bvg-eo-WCN"/>
+                <constraint firstAttribute="trailing" secondItem="0Du-eA-Xvu" secondAttribute="trailing" constant="30" id="EJj-lW-q8b"/>
+                <constraint firstItem="0Du-eA-Xvu" firstAttribute="top" secondItem="5UG-J8-xVe" secondAttribute="bottom" constant="10" id="F8V-Ow-DTt"/>
+                <constraint firstAttribute="trailing" secondItem="5UG-J8-xVe" secondAttribute="trailing" constant="30" id="FcQ-5g-BxD"/>
+                <constraint firstItem="SLa-fm-xPB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="II2-kw-3Mi"/>
+                <constraint firstAttribute="trailing" secondItem="1VO-Fa-LY4" secondAttribute="trailing" constant="30" id="Jgc-Ab-HIF"/>
+                <constraint firstItem="1VO-Fa-LY4" firstAttribute="top" secondItem="SLa-fm-xPB" secondAttribute="bottom" id="OEv-QL-JDZ"/>
+                <constraint firstItem="0Du-eA-Xvu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="RiN-7S-fCk"/>
+                <constraint firstItem="SLa-fm-xPB" firstAttribute="top" secondItem="eK5-Cb-hRY" secondAttribute="bottom" id="V5n-uu-HgB"/>
+                <constraint firstItem="1VO-Fa-LY4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="YXT-DN-bCg"/>
+                <constraint firstItem="5UG-J8-xVe" firstAttribute="top" secondItem="1VO-Fa-LY4" secondAttribute="bottom" constant="10" id="f7K-GC-RYi"/>
+                <constraint firstAttribute="trailing" secondItem="SLa-fm-xPB" secondAttribute="trailing" constant="30" id="hzP-oS-VaF"/>
+                <constraint firstAttribute="centerX" secondItem="eK5-Cb-hRY" secondAttribute="centerX" id="sFu-9S-hel"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="321.5" y="429.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="axsjbg.png" width="72" height="130"/>
+    </resources>
+</document>

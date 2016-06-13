@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Adg-JO-Z0u" customClass="QRDDHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrddbg.png" translatesAutoresizingMaskIntoConstraints="NO" id="K8N-ya-zsL">
+                    <rect key="frame" x="0.0" y="50" width="375" height="66"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont_gengduo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rp-O7-zar">
+                    <rect key="frame" x="355" y="78" width="5" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="7rG-6L-Grw"/>
+                        <constraint firstAttribute="width" constant="5" id="sx0-zc-7Ex"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是地址我是地址我是地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5km-dZ-pvT">
+                    <rect key="frame" x="15" y="89" width="345" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="iFp-nG-paU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="139****3455" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzf-XM-6ci">
+                    <rect key="frame" x="87" y="64" width="194" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="KdV-PY-NrU"/>
+                        <constraint firstAttribute="width" constant="194" id="S6B-Dw-KcY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王小明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AA4-Kt-ji5">
+                    <rect key="frame" x="15" y="64" width="42" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="2WY-fz-aLo"/>
+                        <constraint firstAttribute="height" constant="14" id="KMb-mb-YNf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUb-3j-xqN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B4q-Cr-21R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="8rp-O7-zar" firstAttribute="top" secondItem="WUb-3j-xqN" secondAttribute="bottom" constant="38" id="1CX-Bv-i7D"/>
+                <constraint firstItem="WUb-3j-xqN" firstAttribute="leading" secondItem="Adg-JO-Z0u" secondAttribute="leading" id="8oz-iy-Prz"/>
+                <constraint firstItem="AA4-Kt-ji5" firstAttribute="leading" secondItem="Adg-JO-Z0u" secondAttribute="leading" constant="15" id="ERd-Vh-xiw"/>
+                <constraint firstItem="AA4-Kt-ji5" firstAttribute="top" secondItem="Adg-JO-Z0u" secondAttribute="top" constant="64" id="RNb-Ru-yoU"/>
+                <constraint firstAttribute="trailing" secondItem="WUb-3j-xqN" secondAttribute="trailing" id="XdF-K0-hOH"/>
+                <constraint firstItem="pzf-XM-6ci" firstAttribute="leading" secondItem="AA4-Kt-ji5" secondAttribute="trailing" constant="30" id="YAe-a1-Tkq"/>
+                <constraint firstAttribute="bottom" secondItem="K8N-ya-zsL" secondAttribute="bottom" constant="10" id="YNt-Y9-kP8"/>
+                <constraint firstItem="K8N-ya-zsL" firstAttribute="top" secondItem="WUb-3j-xqN" secondAttribute="bottom" constant="10" id="ZAs-HE-5wy"/>
+                <constraint firstItem="5km-dZ-pvT" firstAttribute="leading" secondItem="Adg-JO-Z0u" secondAttribute="leading" constant="15" id="aNz-U3-TLg"/>
+                <constraint firstAttribute="trailing" secondItem="8rp-O7-zar" secondAttribute="trailing" constant="15" id="cVq-ri-ggw"/>
+                <constraint firstAttribute="trailing" secondItem="K8N-ya-zsL" secondAttribute="trailing" id="hNd-qY-3PG"/>
+                <constraint firstItem="WUb-3j-xqN" firstAttribute="top" secondItem="Adg-JO-Z0u" secondAttribute="top" id="imc-of-3hR"/>
+                <constraint firstItem="K8N-ya-zsL" firstAttribute="leading" secondItem="Adg-JO-Z0u" secondAttribute="leading" id="pGR-8Q-Dzh"/>
+                <constraint firstItem="pzf-XM-6ci" firstAttribute="top" secondItem="Adg-JO-Z0u" secondAttribute="top" constant="64" id="txn-f0-ahp"/>
+                <constraint firstItem="5km-dZ-pvT" firstAttribute="top" secondItem="8rp-O7-zar" secondAttribute="bottom" constant="2" id="u5K-WU-Jso"/>
+                <constraint firstAttribute="trailing" secondItem="5km-dZ-pvT" secondAttribute="trailing" constant="15" id="wo9-NC-dTP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="385.5" y="389"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont_gengduo2.png" width="5" height="9"/>
+        <image name="qrddbg.png" width="375" height="67"/>
+    </resources>
+</document>

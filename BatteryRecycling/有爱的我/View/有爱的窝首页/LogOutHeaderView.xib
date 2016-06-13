@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="N6y-7X-gH3" customClass="LogOutHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yabg.png" translatesAutoresizingMaskIntoConstraints="NO" id="tVH-l3-BVs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="tZm-kq-gXA"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lA2-GP-UxB">
+                    <rect key="frame" x="0.0" y="100" width="375" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购物订单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-Zy-43f">
+                            <rect key="frame" x="15" y="10" width="344" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="FO9-4e-kQ9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bR8-hL-Htf">
+                            <rect key="frame" x="15" y="34" width="345" height="1"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="n6P-9R-DYf"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJc-0U-b2g">
+                            <rect key="frame" x="0.0" y="34" width="93" height="66"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="N6y-7X-gH3" eventType="touchUpInside" id="vxr-my-ZPj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRs-Rc-6NA">
+                            <rect key="frame" x="94" y="34" width="93" height="66"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="N6y-7X-gH3" eventType="touchUpInside" id="AcE-lm-LMi"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfont-daishouhuo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0tR-4j-oJp">
+                            <rect key="frame" x="130" y="50" width="20" height="19"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="待收货" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szT-jM-4pw">
+                            <rect key="frame" x="94" y="78" width="93" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-3g-Tt2">
+                            <rect key="frame" x="188" y="34" width="93" height="66"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="N6y-7X-gH3" eventType="touchUpInside" id="xBx-P5-PLe"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfont-daipingjia.png" translatesAutoresizingMaskIntoConstraints="NO" id="wSJ-Dm-qpq">
+                            <rect key="frame" x="224" y="50" width="20" height="19"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="待评价" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff4-qz-ogC">
+                            <rect key="frame" x="188" y="78" width="93" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfk-ti-onT">
+                            <rect key="frame" x="282" y="34" width="93" height="66"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="N6y-7X-gH3" eventType="touchUpInside" id="8Wg-Ak-2uX"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfont-tuikuanshouhou.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4u-Ef-9Cq">
+                            <rect key="frame" x="318" y="50" width="20" height="19"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="退款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-Du-Keo">
+                            <rect key="frame" x="282" y="78" width="93" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfont-daifukuan.png" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-ll-1Vo">
+                            <rect key="frame" x="36" y="50" width="20" height="19"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="待付款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nc-Dl-o58">
+                            <rect key="frame" x="0.0" y="78" width="93" height="11"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bR8-hL-Htf" firstAttribute="leading" secondItem="lA2-GP-UxB" secondAttribute="leading" constant="15" id="2mt-PL-4TJ"/>
+                        <constraint firstAttribute="height" constant="100" id="9xX-AX-G68"/>
+                        <constraint firstItem="Oay-Zy-43f" firstAttribute="top" secondItem="lA2-GP-UxB" secondAttribute="top" constant="10" id="Am2-ch-dNu"/>
+                        <constraint firstItem="bR8-hL-Htf" firstAttribute="top" secondItem="Oay-Zy-43f" secondAttribute="bottom" id="Biz-ma-F9w"/>
+                        <constraint firstAttribute="trailing" secondItem="Oay-Zy-43f" secondAttribute="trailing" constant="16" id="GEP-0R-DNL"/>
+                        <constraint firstItem="Oay-Zy-43f" firstAttribute="leading" secondItem="lA2-GP-UxB" secondAttribute="leading" constant="15" id="WnT-9q-gMf"/>
+                        <constraint firstAttribute="trailing" secondItem="bR8-hL-Htf" secondAttribute="trailing" constant="15" id="iFD-D1-Kqf"/>
+                    </constraints>
+                </view>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang-dengluzhuce.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9v-h3-ajj">
+                    <rect key="frame" x="161" y="18" width="53" height="53"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53" id="qdi-ut-pua"/>
+                        <constraint firstAttribute="width" constant="53" id="ved-u4-KSg"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tVH-l3-BVs" firstAttribute="leading" secondItem="N6y-7X-gH3" secondAttribute="leading" id="0eh-Jp-UsU"/>
+                <constraint firstAttribute="centerX" secondItem="V9v-h3-ajj" secondAttribute="centerX" id="2U3-5n-eyT"/>
+                <constraint firstItem="lA2-GP-UxB" firstAttribute="top" secondItem="tVH-l3-BVs" secondAttribute="bottom" constant="10" id="EGg-1v-Haz"/>
+                <constraint firstAttribute="trailing" secondItem="tVH-l3-BVs" secondAttribute="trailing" id="EL4-oK-LpG"/>
+                <constraint firstItem="tVH-l3-BVs" firstAttribute="top" secondItem="N6y-7X-gH3" secondAttribute="top" id="cQ5-4c-dXF"/>
+                <constraint firstItem="lA2-GP-UxB" firstAttribute="leading" secondItem="N6y-7X-gH3" secondAttribute="leading" id="fEd-ZY-Bew"/>
+                <constraint firstAttribute="trailing" secondItem="lA2-GP-UxB" secondAttribute="trailing" id="jRJ-rg-y1J"/>
+                <constraint firstItem="V9v-h3-ajj" firstAttribute="top" secondItem="N6y-7X-gH3" secondAttribute="top" constant="18" id="myk-On-Pyp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerImageView" destination="V9v-h3-ajj" id="wrm-NM-TmY"/>
+            </connections>
+            <point key="canvasLocation" x="257.5" y="269"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-daifukuan.png" width="20" height="19"/>
+        <image name="iconfont-daipingjia.png" width="20" height="19"/>
+        <image name="iconfont-daishouhuo.png" width="20" height="19"/>
+        <image name="iconfont-tuikuanshouhou.png" width="20" height="19"/>
+        <image name="touxiang-dengluzhuce.png" width="53" height="53"/>
+        <image name="yabg.png" width="375" height="90"/>
+    </resources>
+</document>

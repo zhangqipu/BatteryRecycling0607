@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GWCFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bet-Au-5Jl">
+                    <rect key="frame" x="250" y="0.0" width="125" height="49"/>
+                    <color key="backgroundColor" red="0.7725490196" green="0.79607843140000001" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="125" id="kRt-Qv-YVc"/>
+                        <constraint firstAttribute="height" constant="49" id="qXr-UA-cpl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="去结算(3)"/>
+                    <connections>
+                        <action selector="postAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pkh-rB-ILZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKt-bf-YN5">
+                    <rect key="frame" x="15" y="0.0" width="56" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="TTT-YJ-joW"/>
+                        <constraint firstAttribute="width" constant="56" id="fwS-21-cNy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="全选" image="icon-dagou-N.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="icon-dagou-Y.png"/>
+                    <connections>
+                        <action selector="seletcedAllAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Q1b-qd-ZU4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：77元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4I-hJ-1Rg">
+                    <rect key="frame" x="106" y="0.0" width="142" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="VTD-pG-9ai"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.16078431372549018" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Bet-Au-5Jl" firstAttribute="leading" secondItem="t4I-hJ-1Rg" secondAttribute="trailing" constant="2" id="EdO-WQ-15b"/>
+                <constraint firstItem="xKt-bf-YN5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="N2p-x1-h4Q"/>
+                <constraint firstItem="t4I-hJ-1Rg" firstAttribute="leading" secondItem="xKt-bf-YN5" secondAttribute="trailing" constant="35" id="VSk-Z8-cEd"/>
+                <constraint firstItem="xKt-bf-YN5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X7d-Vm-mwV"/>
+                <constraint firstItem="Bet-Au-5Jl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZNe-nr-sOz"/>
+                <constraint firstAttribute="trailing" secondItem="Bet-Au-5Jl" secondAttribute="trailing" id="fLC-tg-SHZ"/>
+                <constraint firstItem="t4I-hJ-1Rg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uSw-Gl-Ufq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="postBtn" destination="Bet-Au-5Jl" id="Xw4-4A-NGz"/>
+                <outlet property="quanxuanBtn" destination="xKt-bf-YN5" id="qAM-Yi-IrK"/>
+                <outlet property="subLab" destination="t4I-hJ-1Rg" id="knr-tm-fye"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-dagou-N.png" width="19" height="19"/>
+        <image name="icon-dagou-Y.png" width="19" height="19"/>
+    </resources>
+</document>

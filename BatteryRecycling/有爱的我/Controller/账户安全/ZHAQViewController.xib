@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHAQViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改登录密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdv-NQ-RkZ">
+                    <rect key="frame" x="15" y="65" width="113" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="q3y-e9-gXY"/>
+                        <constraint firstAttribute="height" constant="44" id="zAd-Se-16Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.14901960784313725" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-6l-CyZ">
+                    <rect key="frame" x="15" y="109" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="b4u-cU-C8K"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mW-CU-48N">
+                    <rect key="frame" x="15" y="64" width="345" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1Dn-u3-2iO"/>
+                    </constraints>
+                    <state key="normal" image="iconfont-gengduo.png"/>
+                    <connections>
+                        <action selector="setLoginPassword:" destination="-1" eventType="touchUpInside" id="qiC-Iw-hSj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="修改支付密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85r-vA-sjV">
+                    <rect key="frame" x="15" y="111" width="113" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="Lre-DC-K7e"/>
+                        <constraint firstAttribute="height" constant="44" id="Rox-5D-5IZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1529411765" green="0.14901960780000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLm-QF-yJZ">
+                    <rect key="frame" x="15" y="110" width="345" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Bir-1K-1aT"/>
+                    </constraints>
+                    <state key="normal" image="iconfont-gengduo.png"/>
+                    <connections>
+                        <action selector="setPayPassword:" destination="-1" eventType="touchUpInside" id="o95-eW-qep"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-gD-7ZF">
+                    <rect key="frame" x="15" y="155" width="345" height="1"/>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="EZv-Me-YOv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="85r-vA-sjV" firstAttribute="top" secondItem="GLa-6l-CyZ" secondAttribute="bottom" constant="1" id="BF1-8M-7B3"/>
+                <constraint firstItem="fYN-gD-7ZF" firstAttribute="top" secondItem="85r-vA-sjV" secondAttribute="bottom" id="BKK-FJ-fei"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hx8-VV-CRY"/>
+                <constraint firstItem="NLm-QF-yJZ" firstAttribute="trailing" secondItem="GLa-6l-CyZ" secondAttribute="trailing" id="J5i-ik-BY5"/>
+                <constraint firstItem="fYN-gD-7ZF" firstAttribute="leading" secondItem="85r-vA-sjV" secondAttribute="leading" id="KcJ-lp-eKY"/>
+                <constraint firstItem="GLa-6l-CyZ" firstAttribute="leading" secondItem="rdv-NQ-RkZ" secondAttribute="leading" id="MX8-7q-jnh"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="leading" secondItem="rdv-NQ-RkZ" secondAttribute="leading" id="UAd-A6-rOj"/>
+                <constraint firstItem="NLm-QF-yJZ" firstAttribute="top" secondItem="85r-vA-sjV" secondAttribute="top" constant="-1" id="VAk-d9-IzU"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="YSh-6b-6bH"/>
+                <constraint firstItem="NLm-QF-yJZ" firstAttribute="leading" secondItem="85r-vA-sjV" secondAttribute="leading" id="bdy-Qs-yuS"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="top" secondItem="rdv-NQ-RkZ" secondAttribute="top" constant="-1" id="d9Z-Cl-v3w"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="f36-PW-qKb"/>
+                <constraint firstItem="NLm-QF-yJZ" firstAttribute="trailing" secondItem="fYN-gD-7ZF" secondAttribute="trailing" id="kAq-Mr-nbH"/>
+                <constraint firstItem="GLa-6l-CyZ" firstAttribute="top" secondItem="rdv-NQ-RkZ" secondAttribute="bottom" id="qUi-vu-k31"/>
+                <constraint firstItem="NLm-QF-yJZ" firstAttribute="leading" secondItem="GLa-6l-CyZ" secondAttribute="leading" id="rg6-9U-n9N"/>
+                <constraint firstItem="2mW-CU-48N" firstAttribute="trailing" secondItem="GLa-6l-CyZ" secondAttribute="trailing" id="y4N-S2-8Bc"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="409.5" y="401.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-gengduo.png" width="5" height="9"/>
+    </resources>
+</document>
